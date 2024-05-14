@@ -1,0 +1,42 @@
+.agendamento_container {
+    background-color: var(--azul-escuro);
+    border: none;
+    margin: 0 auto;
+    max-width: 1026px;
+    padding: 2rem 0;
+    border-radius: 3px;
+}
+
+.form_agendamento {
+    margin: 0 auto;
+}
+
+.form-group_agendamento {
+    margin: 0 auto 10px auto ;
+    padding: 10px;
+    width: 60%;
+}
+
+
+@media (max-width: 768px) {
+
+    .agendamento_container {
+        padding: 1rem 0;
+    }
+
+    .form_agendamento {
+        width: 100%;
+    }
+
+    .form-group_agendamento{
+        width: 90%;
+    }
+
+    .container_agendamento {
+        padding: 20px 0;
+    }
+
+    .titulo_agendamento {
+        margin-bottom: 12px;
+    }
+}

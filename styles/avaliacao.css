@@ -1,0 +1,63 @@
+.container_avaliacao {
+    background-color: var(--azul-escuro);
+    border: none;
+    margin: auto;
+    max-width: 1026px;
+    padding: 2rem 0;
+    border-radius: 3px;
+}
+
+.star-rating {
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    color: #ffffff;
+    font-size: 30px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label,
+.star-rating input[type="radio"]:checked~label {
+    color: var(--amarelo);
+}
+
+.nome_avaliacao, .descricao_avaliacao, .email_avaliacao {
+    width: 40%;
+    margin: 0 auto 2rem auto;
+}
+
+.btn_avaliacao {
+    display: flex;
+    width: 40%;
+    margin: 1rem auto;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    .container_avaliacao {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nome_avaliacao, .descricao_avaliacao, .email_avaliacao {
+        width: 90%;
+        
+    }
+
+    .btn_avaliacao {
+        width: 90%;
+    }
+}

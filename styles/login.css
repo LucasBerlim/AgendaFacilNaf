@@ -1,0 +1,29 @@
+.login_container {
+    background-color: var(--azul-escuro);
+    border: none;
+    border-radius: 3px;
+    height: auto;
+    margin: auto;
+    max-width: 1026px;
+    padding: 2rem 0;
+}
+
+.form-group_login {
+    color: var(--branco);
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+
+    .form-group_login {
+        width: 90%;
+    }
+
+    .titulo_login {
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,186 @@
+@import url("styles/header.css");
+@import url("styles/index.css");
+@import url("styles/footer.css");
+@import url("styles/agendamento.css");
+@import url("styles/login.css");
+@import url("styles/administrador.css");
+@import url("styles/edit_grupo.css");
+@import url("styles/about_us.css");
+@import url("styles/avaliacao.css");
+@import url("styles/usuarios/usuario.css");
+
+/* ROOT */
+
+:root {
+    --branco: #FFFFFF;
+    --cinza-bem-claro: #fcfefd;
+    --cinza-claro: #919090;
+    --cor-de-fundo: #D3D3D3;
+    --azul-escuro: #09253d;
+    --azul-claro: #26679E;
+    --amarelo: #e8a420;
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+}
+
+/* BODY */
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* H1 */
+
+h1 {
+    font-size: 20px;
+}
+
+/* H2 */
+
+h2 {
+    color: var(--branco);
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    margin: 0.5em 0;
+}
+
+/* A */
+
+a {
+    color: var(--branco);
+}
+
+a:hover {
+    background-color: var(--azul-escuro);
+}
+
+/* LABEL */
+
+label {
+    color: var(--branco);
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* TABLE  */
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 1026px;
+}
+
+thead th {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: var(--cinza-bem-claro);
+}
+
+tr:hover {
+    background-color: var(--cor-de-fundo);
+}
+
+table a {
+    background-color: var(--cinza-bem-claro);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: var(--azul-escuro);
+    display: inline-block;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+table a:hover {
+    background-color: var(--azul-escuro);
+    border: 1px solid rgb(63, 63, 63);
+    color: var(--branco);
+}
+
+.fundo_tabela {
+    background-color: #f9f9f9;
+} 
+
+/* INPUT */
+
+input {
+    border: 1px solid var(--cinza-claro);
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+/* SELECT */
+
+select {
+    border: 1px solid #919090;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+}
+
+/* BUTTON */
+
+button {
+    background-color: var(--azul-claro);
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: var(--amarelo);
+    color: var(--azul-escuro);
+}
+
+/* TEXTAREA */
+
+textarea {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Responsivo para Smartphone */
+
+@media (max-width: 768px) {
+
+    /* H2 */
+
+    h2 {
+        font-weight: 400;
+    }
+
+    /* TABLE */
+
+    table {
+        width: 100%;
+        display: block;
+        max-width: none;
+        overflow-x: scroll;
+        border-radius: 3px;
+    }
+}

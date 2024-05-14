@@ -1,0 +1,123 @@
+.container_carrossel {
+    display: flex;
+    height: 258px;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 1026px;
+    border-radius: 3px;
+}
+
+.imagem_carrossel {
+    display: none;
+    max-width: 100%;
+    position: absolute;
+    transition: opacity 1s ease-in-out;
+}
+
+.imagem_carrossel.ativa {
+    display: block;
+    opacity: 1;
+}
+
+.container_menu_interno {
+    align-items: center;
+    background-color: var(--azul-escuro);
+    display: flex;
+    height: 76px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 1026px;
+}
+
+.btn_menu_interno {
+    align-items: center;
+    background-color: var(--azul-escuro);
+    border: none;
+    border-radius: 0;
+    color: var(--branco);
+    font-size: 16px;
+    display: flex;
+    height: 76px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 513px;
+}
+
+.btn_menu_interno:hover {
+    background-color: var(--azul-claro);
+    color: white;
+
+}
+
+.container_avaliacao-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1026px;
+    border-radius: 3px;
+    background-color: var(--azul-escuro);
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.img_avaliacao-index {
+    width: 20%;
+    margin: 0 auto 0.5rem auto;
+}
+
+.btn_avaliacao-index {
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+@media (max-width: 1026px) {
+
+    .container_carrossel,
+    .container_menu_interno, 
+    .container_avaliacao {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container_carrossel {
+        height: 94.3px;
+    }
+
+    .container_menu_interno {
+        height: 60px;
+        justify-content: space-around;
+        padding: 0 16px;
+        
+    }
+
+    .btn_menu_interno {
+        height: 76px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+    }
+
+    .container_avaliacao-index {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .img_avaliacao-index {
+        width: 40%;
+    }
+
+    .btn_avaliacao-index {
+        width: 40%;
+    }
+}
