@@ -3,11 +3,13 @@
 @import url("styles/footer.css");
 @import url("styles/agendamento.css");
 @import url("styles/login.css");
-@import url("styles/administrador.css");
 @import url("styles/edit_grupo.css");
 @import url("styles/about_us.css");
 @import url("styles/avaliacao.css");
 @import url("styles/usuarios/usuario.css");
+@import url("styles/usuarios/administrador.css");
+@import url("styles/usuarios/professor.css");
+@import url("styles/usuarios/estudante.css");
 
 /* ROOT */
 
