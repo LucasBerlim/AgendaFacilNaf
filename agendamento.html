@@ -7,6 +7,7 @@
 
     <title>Agendamento</title>
 
+    <script src="script.js"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,44 +91,3 @@
 
     </body>
 </html>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    var dateInput = document.getElementById('data_marcada');
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1;
-    var yyyy = today.getFullYear();
-    if(dd < 10) {
-      dd = '0' + dd;
-    } 
-    if(mm < 10) {
-      mm = '0' + mm;
-    } 
-    today = yyyy + '-' + mm + '-' + dd;
-    dateInput.setAttribute("min", today);
-
-    var maxDate = new Date();
-    maxDate.setDate(maxDate.getDate() + 30);
-    var dd = maxDate.getDate();
-    var mm = maxDate.getMonth() + 1;
-    var yyyy = maxDate.getFullYear();
-    if(dd < 10) {
-      dd = '0' + dd;
-    } 
-    if(mm < 10) {
-      mm = '0' + mm;
-    } 
-    maxDate = yyyy + '-' + mm + '-' + dd;
-    dateInput.setAttribute("max", maxDate);
-  });
-
-  function formatarCPF(campo) {
-    let valor = campo.value;
-    valor = valor.replace(/\D/g, ""); 
-    valor = valor.replace(/(\d{3})(\d)/, "$1.$2"); 
-    valor = valor.replace(/(\d{3})(\d)/, "$1.$2");
-    valor = valor.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
-    campo.value = valor;
-  }
-</script>

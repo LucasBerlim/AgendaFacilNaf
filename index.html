@@ -8,6 +8,7 @@
 
     <title>Home</title>
 
+    <script src="script.js"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,19 +85,3 @@
 
     </body>
 </html>
-
-<script>
-    let indiceAtual = 0;
-    const imagens = document.querySelectorAll('.imagem_carrossel');
-    const totalImagens = imagens.length;
-
-    function mudarImagem() {
-        imagens[indiceAtual].classList.remove('ativa');
-        indiceAtual = (indiceAtual + 1) % totalImagens;
-        imagens[indiceAtual].classList.add('ativa');
-    }
-
-    setInterval(mudarImagem, 5000);
-
-    mudarImagem();
-</script>
