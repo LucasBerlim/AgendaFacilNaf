@@ -182,6 +182,12 @@ textarea {
         min-width:96%
     }
 
+    /* LABEL */
+
+    label {
+        min-width:96%
+    }
+
     /* TABLE */
 
     table {
