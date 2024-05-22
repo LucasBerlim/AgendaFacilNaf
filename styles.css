@@ -179,7 +179,7 @@ textarea {
     /* INPUT DATE */
 
     input[type="date"] {
-        min-width:95%
+        min-width:100%
     }
 
     /* TABLE */
