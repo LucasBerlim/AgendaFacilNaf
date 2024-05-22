@@ -50,4 +50,4 @@ Desenvolver o Front-End de uma aplicação web responsiva que atenda a necessida
 <br><br>
 
 ## Resultado do projeto - Take a look at our project 👁️
-Clique aqui <a href="#">EM DESENVOLVIMENTO</a> para vizualizar o projeto finalizado.
+<a href="https://agenda-facil-naf.vercel.app/">Clique aqui</a> para vizualizar o projeto finalizado.
