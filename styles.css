@@ -176,6 +176,12 @@ textarea {
         font-weight: 400;
     }
 
+    /* INPUT DATE */
+
+    input[type="date"] {
+        min-width:95%
+    }
+
     /* TABLE */
 
     table {
