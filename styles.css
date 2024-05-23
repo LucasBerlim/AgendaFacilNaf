@@ -185,7 +185,7 @@ textarea {
     /* SELECT */
 
     select {
-        min-width:95%
+        max-width:95%
     }
 
     /* TABLE */
