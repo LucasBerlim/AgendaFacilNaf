@@ -7,6 +7,7 @@
 
     <title>Professor</title>
 
+    <script src="script.js"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,7 @@
 
         <header>
             <img class="img_header" src="img\NAF.jpg" alt="Descrição da Imagem">
-            
+    
             <div class="submenu">
                 <nav class="nav_submenu">
                     <h2 class="h2_submenu">Núcleo de Apoio Contábil e Fiscal</h2>
@@ -31,11 +32,69 @@
                     </div>
                 </nav>
             </div>
+    
+            <div class="menu-usuario" id="menu-usuario">
+                <nav class="nav_menu-usuario">
+                    <a href="#" id="atualizar-dados" onclick="menuUsuarioAtualizarDados(); return false;">Atualizar
+                        Dados</a>
+                    <a href="index.html">Sair</a>
+                </nav>
+            </div>
+    
+            <div class="container-atualizar-dados" id="form-dados">
+    
+                <form class="form-atualizar-dados">
+                    <h3>Dados do perfil</h3>
+                    <input type="text" placeholder="Nome" name="nome"><br>
+                    <input type="number" placeholder="Idade" name="idade"><br>
+                    <input type="email" placeholder="Email" name="email"><br>
+                    <input type="text" placeholder="CPF" name="cpf"><br>
+                    <button type="submit">Atualizar</button>
+                </form>
+            </div>
+    
         </header>
 
-        <div class="container_professor">
-            
-        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="8">Meus atendimentos</th>
+                </tr>
+    
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>CPF</th>
+                    <th>Data</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+    
+            <tr class='fundo_tabela'>
+                <td>Fulano</td>
+                <td>fulaninho@gmail.com</td>
+                <td>13582949302</td>
+                <td>15/05/2024</td>
+                <td>15:00</td>
+            </tr>
+    
+            <tr class='fundo_tabela'>
+                <td>Fulano</td>
+                <td>fulaninho@gmail.com</td>
+                <td>13582949302</td>
+                <td>15/05/2024</td>
+                <td>15:00</td>
+            </tr>
+    
+            <tr class='fundo_tabela'>
+                <td>Fulano</td>
+                <td>fulaninho@gmail.com</td>
+                <td>13582949302</td>
+                <td>15/05/2024</td>
+                <td>15:00</td>
+            </tr>
+            </thead>
+        </table>
 
         <footer>
             <div class="container_footer">

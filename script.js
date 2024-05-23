@@ -57,3 +57,11 @@ function formatarCPF(campo) {
 }
 
 document.addEventListener('DOMContentLoaded', function () { definirLimitesData(); });
+
+function menuUsuarioAtualizarDados() {
+    var form = document.getElementById('form-dados');
+    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    
+    var menu = document.getElementById('menu-usuario');
+    menu.style.borderBottom = menu.style.borderBottom === '1px solid var(--azul-escuro)' ? 'none' : '1px solid var(--azul-escuro)';
+  }

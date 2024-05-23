@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .star-rating input[type="radio"] {
@@ -34,7 +34,7 @@
 
 .nome_avaliacao, .descricao_avaliacao, .email_avaliacao {
     width: 40%;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 1rem auto;
 }
 
 .btn_avaliacao {
