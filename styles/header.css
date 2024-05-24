@@ -5,6 +5,10 @@ header {
   text-align: center;
 }
 
+.header_titulo_mobile {
+  display: none;
+}
+
 .submenu {
   background-color: var(--azul-claro);
   display: flex;
@@ -75,6 +79,13 @@ header {
 
   header {
     margin-bottom: 1rem;
+  }
+
+  .header_titulo_mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
   }
 
   .img_header {

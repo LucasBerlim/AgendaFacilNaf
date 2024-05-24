@@ -51,6 +51,12 @@ h2 {
     margin: 1rem 0;
 }
 
+/* H3 */
+
+h3 {
+    color: var(--azul-escuro);
+}
+
 /* A */
 
 a {
