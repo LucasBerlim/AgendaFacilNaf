@@ -4,6 +4,8 @@ function iniciarCarrossel() {
     const totalImagens = imagens.length;
 
     function mudarImagem() {
+        classList = ".imagem_carrossel";
+        
         imagens[indiceAtual].classList.remove('ativa');
         indiceAtual = (indiceAtual + 1) % totalImagens;
         imagens[indiceAtual].classList.add('ativa');
@@ -11,9 +13,8 @@ function iniciarCarrossel() {
 
     setInterval(mudarImagem, 5000);
     mudarImagem();
-}
 
-document.addEventListener('DOMContentLoaded', iniciarCarrossel);
+}
 
 
 function definirLimitesData() {
@@ -56,9 +57,10 @@ function formatarCPF(campo) {
     campo.value = valor;
 }
 
-document.addEventListener('DOMContentLoaded', function () { definirLimitesData(); });
+
 
 function menuUsuarioAtualizarDados() {
+    
     var form = document.getElementById('form-dados');
     form.style.display = form.style.display === 'none' ? 'block' : 'none';
     

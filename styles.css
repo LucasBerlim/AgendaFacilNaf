@@ -79,7 +79,8 @@ table {
 }
 
 thead th {
-    background-color: #e5f0fc              ;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
 }
 
 th,

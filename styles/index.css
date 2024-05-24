@@ -9,6 +9,10 @@
     border-radius: 3px;
 }
 
+.container_carrossel-mobile {
+    display: none;
+}
+
 .imagem_carrossel {
     display: none;
     max-width: 100%;
@@ -89,7 +93,26 @@
 
 @media (max-width: 768px) {
     .container_carrossel {
-        height: 94.3px;
+        /*height: 94.3px;*/
+        display: none;
+    }
+
+    .container_carrossel-mobile {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        width: 430px;
+        height: 247px;
+        border-radius: 3px;
+    }
+
+    .imagem_carrossel {
+        display: none;
+        max-width: 200%;
+        position: absolute;
+        transition: opacity 1s ease-in-out;
     }
 
     .container_menu_interno {
