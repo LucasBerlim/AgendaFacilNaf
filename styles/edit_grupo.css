@@ -13,12 +13,8 @@
 
 .form-grupo_edit-grupo {
     color: var(--branco);
-    padding-top: 1rem;
 }
 
-.input_edit-grupo {
-    margin-top: 1rem;
-}
 
 @media (max-width: 768px) {
 
@@ -34,10 +30,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .input_edit-grupo {
-        margin-top: 0;
     }
 
     .b_edit-grupo {
