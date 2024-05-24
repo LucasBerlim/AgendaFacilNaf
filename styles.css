@@ -182,8 +182,14 @@ textarea {
 
     /* INPUT DATE */
 
-    input[type="date"], select {
-        /*min-width:96%*/
+    input[type="date"] {
+        min-width: 96%;
+        -webkit-appearance: none;
+    }
+
+    /* SELECT */
+
+    select {
         -webkit-appearance: none;
     }
 
