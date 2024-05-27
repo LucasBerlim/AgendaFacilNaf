@@ -27,7 +27,7 @@
 
 .container_menu_interno {
     align-items: center;
-    background-color: var(--azul-escuro);
+    background-color: var(--azul-claro);
     display: flex;
     height: 76px;
     justify-content: space-evenly;
@@ -39,7 +39,6 @@
 
 .btn_menu_interno {
     align-items: center;
-    background-color: var(--azul-escuro);
     border: none;
     border-radius: 0;
     color: var(--branco);
@@ -49,12 +48,6 @@
     justify-content: space-evenly;
     margin: 0 auto;
     width: 513px;
-}
-
-.btn_menu_interno:hover {
-    background-color: var(--azul-claro);
-    color: white;
-
 }
 
 .container_avaliacao-index {
