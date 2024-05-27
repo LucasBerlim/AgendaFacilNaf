@@ -52,7 +52,7 @@ header {
 }
 
 .menu-usuario a {
-  color: black;
+  color: var(--azul-escuro);
   padding: 8px 15px;
   margin-left: 1rem;
 }
@@ -67,6 +67,12 @@ header {
   margin: 0 auto;
   border-bottom: 1px solid var(--azul-escuro);
 
+}
+
+.label_atualizar-dados {
+  color: var(--azul-escuro);
+  display: flex;
+  margin-top: 1rem;
 }
 
 .form-atualizar-dados {

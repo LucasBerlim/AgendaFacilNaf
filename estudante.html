@@ -45,13 +45,16 @@
         </div>
 
         <div class="container-atualizar-dados" id="form-dados">
-
             <form class="form-atualizar-dados">
                 <h3>Dados do perfil</h3>
+                <label class="label_atualizar-dados">Nome:</label>
                 <input type="text" placeholder="Nome" name="nome"><br>
-                <input type="number" placeholder="Idade" name="idade"><br>
+                <label class="label_atualizar-dados">Data de nascimento:</label>
+                <input type="date" name="dataNascimento"/>
+                <label class="label_atualizar-dados">Email:</label>
                 <input type="email" placeholder="Email" name="email"><br>
-                <input type="text" placeholder="CPF" name="cpf"><br>
+                <label class="label_atualizar-dados">CPF:</label>
+                <input type="text" placeholder="CPF" name="cpf" maxlength="14" oninput="formatarCPF(this)"><br>
                 <button type="submit">Atualizar</button>
             </form>
         </div>
