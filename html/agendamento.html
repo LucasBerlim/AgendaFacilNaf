@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agendamento</title>
+
+    <script src="..\script.js"></script>
+    <link rel="stylesheet" href="..\reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="..\styles.css" media="screen" />
+
+    </head>
+
+    <body>
+
+        <header>
+            <img class="img_header" src="..\img\NAF.jpg" alt="Descrição da Imagem">
+            <h3 class="header_titulo_mobile">Núcleo de Apoio Contábil e Fiscal</h3>
+            
+            <div class="submenu">
+                <nav class="nav_submenu">
+                    <h2 class="h2_submenu">Núcleo de Apoio Contábil e Fiscal</h2>
+                    <div>
+                        <a class="a_submenu" href="index.html">Home</a>
+                        <a class="a_submenu" href="agendamento.html">Agendamento</a>
+                        <a class="a_submenu" href="usuario.html">Usuário</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="agendamento_container">
+            <h2 class="titulo_agendamento">Agenda Fácil NAF</h2>
+            <form class="form_agendamento" action="agendamento.html" method="POST">
+                <div class="form-group_agendamento">
+                    <label for="nome_atendido">Nome:</label>
+                    <input type="text" name="nome_atendido" id="nome_atendido" placeholder="Digite seu Nome" required>
+                </div>
+            
+                <div class="form-group_agendamento">
+                    <label for="email_atendido">Email:</label>
+                    <input type="text" name="email_atendido" id="email_atendido" placeholder="Digite seu Email" required>
+                </div>
+
+                <div class="form-group_agendamento">
+                    <label for="cpf_atendido">CPF:</label>
+                    <input type="text" name="cpf_atendido" id="cpf_atendido" placeholder="Digite seu CPF" maxlength="14" oninput="formatarCPF(this)" required>
+                </div>
+
+                <div class="form-group_agendamento"> 
+                    <label for="data_marcada">Escolha o dia:</label>
+
+                    <script>document.addEventListener('DOMContentLoaded', function () { definirLimitesData(); });</script>
+                    <input type="date" id="data_marcada" name="data_marcada" required>
+                </div>
+
+                <div class="form-group_agendamento">
+                    <label for="hora_marcada">Escolha o horário:</label>
+                    <select id="hora_marcada" name="hora_marcada" required>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                    </select>
+                </div>
+                
+                <div class="form-group_agendamento">
+                    <button type="submit" name="submit_form" id="submit">Agendar</button>
+                </div>
+            </form>
+        </div>
+        
+        <footer>
+            <div class="container_footer">
+                <h3>Fale conosco</h3>
+                <p>0800 00000<br>21 90000-0000</p>
+            </div>
+            <div class="container_footer">
+                <h3>Endereço</h3>
+                <p>Rua Exemplo, nº 560, sala 103<br>Alto, Teresópolis-RJ</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
