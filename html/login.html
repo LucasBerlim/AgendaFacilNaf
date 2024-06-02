@@ -7,6 +7,7 @@
 
     <title>Home</title>
 
+    <script src="..\script.js"></script>
     <link rel="stylesheet" href="..\reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,14 +36,29 @@
         </header>
 
         <div class="login_container">
-            <form class="form-login">
-                <h2 class="titulo_login">Login</h2>
+            <div class="form-login">
+                <h2>Login</h2>
                 <label>Usuário:</label>
                 <input type="text" placeholder="Nome" name="nome"><br>
                 <label>Senha:</label>
                 <input type="password" placeholder="password" name="password"><br>
-                <button type="submit">Entrar</button>
-            </form>
+                <button type="submit" onclick="window.location.href='cliente.html'">Entrar</button>
+            </div>
+        
+            <div class="cadastro-link">
+                <a href="#" onclick="showCadastroForm()">Cadastre-se clicando aqui</a>
+            </div>
+        
+            <div class="form-cadastro" style="display: none;">
+                <h2>Cadastro de usuário</h2>
+                <label>Usuário:</label>
+                <input type="text" placeholder="Nome" name="nome"><br>
+                <label>Digite uma senha:</label>
+                <input type="password" placeholder="password" name="password"><br>
+                <label>Digite a senha novamente:</label>
+                <input type="password" placeholder="password" name="password"><br>
+                <button type="submit" onclick="window.location.href='login.html';">Cadastrar</button>
+            </div>
         </div>
 
         <footer>

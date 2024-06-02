@@ -57,6 +57,18 @@ h3 {
     color: var(--azul-escuro);
 }
 
+/* HR */
+hr {
+    width: 40%;
+    margin: 1rem 0;
+    border-color: var(--cinza-bem-claro);
+}
+
+/* P */
+p {
+    color: var(--azul-escuro);
+}
+
 /* A */
 
 a {

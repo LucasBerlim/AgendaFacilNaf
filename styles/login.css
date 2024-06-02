@@ -14,7 +14,7 @@
     margin-top: 1rem;
 }
 
-.form-login {
+.form-login, .form-cadastro, .cadastro-link {
     width: 40%;
     margin: 0 auto 1rem auto;
     padding: 1rem 0 0 0;
@@ -22,7 +22,7 @@
 
 @media (max-width: 768px) {
 
-    .form-login {
+    .form-login, .form-cadastro, .cadastro-link {
         width: 90%;
     }
 }

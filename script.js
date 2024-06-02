@@ -58,7 +58,6 @@ function formatarCPF(campo) {
 }
 
 
-
 function menuUsuarioAtualizarDados() {
     
     var form = document.getElementById('form-dados');
@@ -66,4 +65,10 @@ function menuUsuarioAtualizarDados() {
     
     var menu = document.getElementById('menu-usuario');
     menu.style.borderBottom = menu.style.borderBottom === '1px solid var(--azul-escuro)' ? 'none' : '1px solid var(--azul-escuro)';
-  }
+}
+
+
+function showCadastroForm() {
+    const cadastroForm = document.querySelector(".form-cadastro");
+    cadastroForm.style.display = "block";
+}
