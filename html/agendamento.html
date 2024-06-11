@@ -37,7 +37,7 @@
 
         <div class="agendamento_container">
             <h2 class="titulo_agendamento">Agenda Fácil NAF</h2>
-            <form class="form_agendamento">
+            <form class="form_agendamento" id="agendamentoForm" method="post">
                 <div class="form-group_agendamento">
                     <label for="nome_atendido">Nome:</label>
                     <input type="text" name="nome_atendido" id="nome_atendido" placeholder="Digite seu Nome" required>
@@ -74,10 +74,18 @@
                         <option value="16:00">16:00</option>
                     </select>
                 </div>
-                
+            
                 <div class="form-group_agendamento">
-                    <button type="submit" onclick="window.location.href='login.html';">Agendar</button>
+                    <button type="submit" >Agendar</button>
                 </div>
+                
+                <script>
+                    document.getElementById('agendamentoForm').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        window.location.href = 'login.html';
+                    });
+                </script>
+
             </form>
         </div>
         

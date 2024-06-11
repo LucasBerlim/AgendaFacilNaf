@@ -38,7 +38,7 @@
 
         <div class="edit-grupo_container">
             <h2 class="titulo_edit-grupo">Editar grupo do atendimento</h2>
-            <form class="form-grupo" action="administrador.html" method="POST">
+            <form class="form-grupo" id="editGrupoForm" method="POST">
 
                 <div class="form-grupo_edit-grupo">
                     <button type="button" onclick="location.href='administrador.html';" name="voltar">voltar</button>
@@ -50,8 +50,16 @@
                 </div>
                 
                 <div class="form-grupo_edit-grupo">
-                    <button type="submit" onclick="location.href='administrador.html';">Atualizar</button>
+                    <button type="submit">Atualizar</button>
                 </div>
+
+                <script>
+                    document.getElementById('editGrupoForm').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        window.location.href = 'administrador.html';
+                    });
+                </script>
+
             </form>
         </div>
 

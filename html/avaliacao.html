@@ -34,7 +34,7 @@
             </div>
         </header>
 
-        <form class="container_avaliacao" action="" method="post">
+        <form class="container_avaliacao" id="avaliacaoForm" method="post">
             <h2>Como foi o atendimento?</h2>
 
             <div class="star-rating">
@@ -68,6 +68,14 @@
             <div>
                 <button class="btn_avaliacao" type="submit">Enviar Avaliação</button>
             </div>
+
+            <script>
+                document.getElementById('avaliacaoForm').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    window.location.href = '..\\index.html';
+                });
+            </script>
+
         </form>
 
         <footer>
