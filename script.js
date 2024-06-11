@@ -72,3 +72,13 @@ function showCadastroForm() {
     const cadastroForm = document.querySelector(".form-cadastro");
     cadastroForm.style.display = "block";
 }
+
+function confirmAction(event) {
+    var confirmation = confirm("Você realmente deseja fazer isso?");
+    if (confirmation == true) {
+        return true;
+        
+    } else {
+        event.preventDefault();
+    }
+}
