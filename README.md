@@ -4,7 +4,6 @@
 </h1>
 
 ## Integrantes da Equipe - Team Members 
-
 - Lucas Branco Berlim da Cunha
 - Leticia Lopes Cardozo
 - Luiz Ricardo Silva Santos
@@ -49,5 +48,14 @@ A <strong>administração do NAF</strong> não tem um controle virtual dos horá
 Desenvolver o Front-End de uma aplicação web responsiva que atenda a necessidade de agendamento da população e a designação dos horários e grupos de estudantes com seu respectivo professor por parte dos administradores, através de uma interface amigável, intuitiva e fácil de utilizar.
 <br><br>
 
+## Prototipagem - Prototyping
+O protótipo foi desenvolvido através do Figma.
+As três primeiras telas escolhidas para prototipação foram: 
+- Página home (index.html)
+- Página de agendamento (agendamento.html)
+- Página de usuários (usuario.html)
+<br><br>
+
 ## Resultado do projeto - Take a look at our project 👁️
-<a href="https://agenda-facil-naf.vercel.app/">Clique aqui</a> para vizualizar o projeto finalizado.
+<a href="https://agenda-facil-naf.vercel.app/">Clique aqui</a> para navegar pelo projeto finalizado.
+
