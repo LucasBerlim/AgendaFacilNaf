@@ -38,7 +38,7 @@ O projeto utilizou as seguintes ferramentas de desenvolvimento de software:
 <br><br>
 
 ## Dores do Público Alvo - Target Audience Pain Points
-A <strong>população</strong> precisa de atendimento, mas não tem a praticidade de agendar virtualmente, fazendo com que tenham que se deslocar até a unidade mais próxima e enfrentar filas simplesmente para agendar e voltar em outra data para o atendimento.
+A <strong>população</strong> precisa de atendimento, mas não tem a praticidade de agendar virtualmente, fazendo com que tenham que se deslocar até a unidade mais próxima e enfrentar filas, simplesmente para agendar e voltar em outra data para o atendimento.
 
 
 A <strong>administração do NAF</strong> não tem um controle virtual dos horários de atendimento, logo, possui muito mais trabalho para organizar qual grupo de <strong>estudantes</strong>, liderados por <strong>professores</strong>, ficará responsável pelo atendimento.
